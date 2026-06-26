@@ -167,19 +167,26 @@ public class EntradaVehiculo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("DATOS CLIENTE"));
 
+        txtTelefono.setBackground(new java.awt.Color(153, 255, 153));
         txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder("TELEFONO"));
 
+        btnRellenar.setBackground(new java.awt.Color(153, 153, 255));
         btnRellenar.setText("RELLENAR");
         btnRellenar.addActionListener(this::btnRellenarActionPerformed);
 
+        txtMarca.setBackground(new java.awt.Color(153, 255, 153));
         txtMarca.setBorder(javax.swing.BorderFactory.createTitledBorder("MARCA"));
 
+        txtModelo.setBackground(new java.awt.Color(153, 255, 153));
         txtModelo.setBorder(javax.swing.BorderFactory.createTitledBorder("MODELO"));
 
+        txtColor.setBackground(new java.awt.Color(153, 255, 153));
         txtColor.setBorder(javax.swing.BorderFactory.createTitledBorder("COLOR"));
 
+        txtReferencia.setBackground(new java.awt.Color(153, 255, 153));
         txtReferencia.setBorder(javax.swing.BorderFactory.createTitledBorder("REFERENCIA"));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -218,7 +225,9 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("SERVICIO DE LAVADO"));
+        jPanel3.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SERVICIO DE LAVADO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 13), new java.awt.Color(30, 41, 59))); // NOI18N
+        jPanel3.setForeground(new java.awt.Color(30, 41, 59));
 
         jrbExpress.setText("EXPRESS");
 
@@ -228,6 +237,7 @@ public class EntradaVehiculo extends javax.swing.JFrame {
 
         txtDescripcion.setColumns(20);
         txtDescripcion.setRows(5);
+        txtDescripcion.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 255, 102)));
         jScrollPane1.setViewportView(txtDescripcion);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -258,6 +268,7 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("SERVICIOS EXTRA"));
 
         jcbLavadoMotor.setText("LAVADO DE MOTOR");
@@ -300,6 +311,7 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel4.setBackground(new java.awt.Color(204, 255, 204));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("PRODUCTOS ADICIONALES"));
 
         jcbPañoMicrofibra.setText("PAÑO DE MICROFIBRA");
@@ -332,22 +344,35 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel5.setBackground(new java.awt.Color(153, 255, 153));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("COSTO"));
 
+        txtPrecioFinal.setBackground(new java.awt.Color(204, 255, 255));
         txtPrecioFinal.setBorder(javax.swing.BorderFactory.createTitledBorder("PRECIO FINAL"));
 
+        btnRegresar.setBackground(new java.awt.Color(153, 153, 255));
         btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(this::btnRegresarActionPerformed);
 
+        txtNumeroOrden.setBackground(new java.awt.Color(204, 255, 255));
         txtNumeroOrden.setBorder(javax.swing.BorderFactory.createTitledBorder("NUMERO DE ORDEN"));
 
+        btnRegistrarE.setBackground(new java.awt.Color(40, 167, 69));
+        btnRegistrarE.setFont(new java.awt.Font("Liberation Sans", 1, 13)); // NOI18N
+        btnRegistrarE.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrarE.setText("REGISTRAR ENTRADA");
         btnRegistrarE.addActionListener(this::btnRegistrarEActionPerformed);
 
+        txtPrecioUnitario.setBackground(new java.awt.Color(204, 255, 255));
         txtPrecioUnitario.setBorder(javax.swing.BorderFactory.createTitledBorder("PRECIO UNITARIO"));
 
+        jcbTipoPago.setBackground(new java.awt.Color(255, 51, 51));
+        jcbTipoPago.setFont(new java.awt.Font("Liberation Sans", 1, 13)); // NOI18N
+        jcbTipoPago.setForeground(new java.awt.Color(255, 255, 255));
         jcbTipoPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "EFECTIVO", "TARJETA", "TRANFERENCIA" }));
 
+        jLabel1.setFont(new java.awt.Font("Liberation Sans", 1, 13)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
         jLabel1.setText("TIPO DE PAGO:");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -391,10 +416,12 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel6.setBackground(new java.awt.Color(204, 255, 204));
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("COMENTARIOS / SOLICITUDES"));
 
         txtComentarios.setColumns(20);
         txtComentarios.setRows(5);
+        txtComentarios.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 255, 102)));
         jScrollPane2.setViewportView(txtComentarios);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -413,6 +440,7 @@ public class EntradaVehiculo extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel7.setBackground(new java.awt.Color(204, 255, 204));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("ENTRADA"));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
